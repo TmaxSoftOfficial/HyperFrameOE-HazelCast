@@ -24,6 +24,7 @@ ENV HZ_HOME="${HZ_HOME}" \
 EXPOSE 5701
 
 #COPY *.sh *.properties ${HZ_HOME}/
+RUN apt-get install wget
 RUN wget https://github.com/TmaxSoftOfficial/Hazelcast_RnD/raw/master/hazelcast_4.0.1/logging.properties -P ${HZ_HOME}
 RUN wget https://github.com/TmaxSoftOfficial/Hazelcast_RnD/raw/master/hazelcast_4.0.1/start-hazelcast.sh -P ${HZ_HOME} 
 
