@@ -27,13 +27,13 @@ COPY *.sh *.properties ${HZ_HOME}/
 
 RUN echo "Installing Hazelcast" \
     && mkdir "${HZ_HOME}/lib" \
-    && curl -s -o ${HZ_HOME}/lib/${HZ_JAR} -L ${JAR_URL}/${HZ_JAR} 
-#    && echo "Installing JCache" \
-#    && curl -sf -o ${HZ_HOME}/lib/${CACHE_API_JAR} -L ${JAR_URL}/${CACHE_API_JAR} \
-#    && echo "Granting read permission to ${HZ_HOME}" \
-#    && chmod -R +r $HZ_HOME \
-#    && echo "Setting Pardot ID to 'docker'" \
-#    && echo 'hazelcastDownloadId=docker' > hazelcast-download.properties
+    && curl -s -o ${HZ_HOME}/lib/${HZ_JAR} -L ${JAR_URL}/${HZ_JAR} \
+    && echo "Installing JCache" \
+    && curl -s -o ${HZ_HOME}/lib/${CACHE_API_JAR} -L ${JAR_URL}/${CACHE_API_JAR} \
+    && echo "Granting read permission to ${HZ_HOME}" \
+    && chmod -R +r $HZ_HOME \
+    && echo "Setting Pardot ID to 'docker'" \
+    && echo 'hazelcastDownloadId=docker' > hazelcast-download.properties
 
 WORKDIR ${HZ_HOME}
 
