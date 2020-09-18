@@ -36,6 +36,7 @@ RUN echo "Installing Hazelcast" \
     && echo "Granting read permission to ${HZ_HOME}" \
 #   && chmod -R +r $HZ_HOME \
     && chmod -R  g+rw $HZ_HOME \
+    && chmod u+x $HZ_HOME/start-hazelcast.sh \
     && echo "Setting Pardot ID to 'docker'" \
     && echo 'hazelcastDownloadId=docker' > hazelcast-download.properties
 
