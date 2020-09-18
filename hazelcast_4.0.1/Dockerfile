@@ -42,5 +42,5 @@ RUN echo "Installing Hazelcast" \
 WORKDIR ${HZ_HOME}
 
 # Start Hazelcast server
-CMD ["/opt/hazelcast/start-hazelcast.sh"]
+CMD ["/opt/hazelcast/start-hazelcast.sh", "run"]
 
