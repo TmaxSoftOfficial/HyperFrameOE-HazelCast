@@ -23,10 +23,11 @@ ENV HZ_HOME="${HZ_HOME}" \
 # Expose port
 EXPOSE 5701
 
-#COPY *.sh *.properties ${HZ_HOME}/
-RUN apt-get install wget
-RUN wget https://github.com/TmaxSoftOfficial/HyperFrameOE-Hazelcast/blob/master/hazelcast_4.0.1/logging.properties -P ${HZ_HOME}/
-RUN wget https://github.com/TmaxSoftOfficial/HyperFrameOE-Hazelcast/blob/master/hazelcast_4.0.1/start-hazelcast.sh -P ${HZ_HOME}/ 
+COPY *.sh ${HZ_HOME}/
+COPY *.properties ${HZ_HOME}/
+#RUN apt-get install wget
+#RUN wget https://github.com/TmaxSoftOfficial/HyperFrameOE-Hazelcast/blob/master/hazelcast_4.0.1/logging.properties -P ${HZ_HOME}/
+#RUN wget https://github.com/TmaxSoftOfficial/HyperFrameOE-Hazelcast/blob/master/hazelcast_4.0.1/start-hazelcast.sh -P ${HZ_HOME}/ 
 
 RUN echo "Installing Hazelcast" \
     && mkdir "${HZ_HOME}/lib" \
