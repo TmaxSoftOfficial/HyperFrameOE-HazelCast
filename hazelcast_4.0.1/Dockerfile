@@ -23,7 +23,7 @@ ENV HZ_HOME="${HZ_HOME}" \
 # Expose port
 EXPOSE 5701
 
-COPY *.sh *.properties ${HZ_HOME}/
+#COPY *.sh *.properties ${HZ_HOME}/
 
 RUN echo "Installing Hazelcast" \
     && mkdir "${HZ_HOME}/lib" \
