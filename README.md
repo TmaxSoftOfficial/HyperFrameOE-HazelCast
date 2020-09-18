@@ -1,4 +1,4 @@
-# Hazelcast
+# HyperFrameOe-Hazelcast
 
 This is a group of Hazelcast Docker files with versions for HyperFrame Open Edition.
 
