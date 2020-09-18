@@ -10,7 +10,7 @@ ARG HZ_HOME="/opt/hazelcast"
 ARG HZ_JAR="hazelcast-all-${HZ_VERSION}.jar"
 ARG CACHE_API_JAR="cache-api-${CACHE_API_VERSION}.jar"
 
-ARG JAR_URL="https://github.com/TmaxSoftOfficial/Hazelcast_RnD/raw/master"
+ARG JAR_URL="https://github.com/TmaxSoftOfficial/HyperFrameOE-Hazelcast/raw/master"
 
 # Runtime constants / variables
 ENV HZ_HOME="${HZ_HOME}" \
