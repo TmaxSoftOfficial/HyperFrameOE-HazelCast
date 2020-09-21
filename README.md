@@ -42,3 +42,11 @@ $ docker run -e JAVA_OPTS="-Dhazelcast.local.publicAddress=<host_ip>:5701" -p 57
 ### License
 
 This project is licensed under the Apache-2.0
+
+### Version History
+
+[HyperFrame OE, Hazelcast 4.0.1](https://github.com/TmaxSoftOfficial/HyperFrameOE-Hazelcast/blob/master/hazelcast_4.0.1/Dockerfile "dockerfile link") (latest)
+
+### HyperFrameOE Service Level
+
+[HyperFrameOE Service Level](https://github.com/TmaxSoftOfficial/HyperFrameOE-About/blob/master/ServiceLevel.md)
