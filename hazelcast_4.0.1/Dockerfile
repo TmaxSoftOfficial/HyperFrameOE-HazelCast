@@ -23,12 +23,7 @@ ENV HZ_HOME="${HZ_HOME}" \
 # Expose port
 EXPOSE 5701
 
-#COPY *.sh ${HZ_HOME}/
-COPY ./logging.properties $HZ_HOME/
-COPY ./start-hazelcast.sh $HZ_HOME/
-#RUN apt-get install wget
-#RUN wget https://github.com/TmaxSoftOfficial/HyperFrameOE-Hazelcast/blob/master/hazelcast_4.0.1/logging.properties -P ${HZ_HOME}/
-#RUN wget https://github.com/TmaxSoftOfficial/HyperFrameOE-Hazelcast/blob/master/hazelcast_4.0.1/start-hazelcast.sh -P ${HZ_HOME}/ 
+COPY *.sh *.properties ${HZ_HOME}/
 
 RUN echo "Installing Hazelcast" \
     && mkdir "${HZ_HOME}/lib" \
@@ -36,8 +31,7 @@ RUN echo "Installing Hazelcast" \
     && echo "Installing JCache" \
     && curl -sf -o ${HZ_HOME}/lib/${CACHE_API_JAR} -L ${JAR_URL}/${CACHE_API_JAR} \
     && echo "Granting read permission to ${HZ_HOME}" \
-#   && chmod -R +r $HZ_HOME \
-    && chmod -R  g+rw $HZ_HOME \
+    && chmod -R +r $HZ_HOME \
     && chmod u+x $HZ_HOME/start-hazelcast.sh \
     && echo "Setting Pardot ID to 'docker'" \
     && echo 'hazelcastDownloadId=docker' > hazelcast-download.properties
@@ -45,5 +39,5 @@ RUN echo "Installing Hazelcast" \
 WORKDIR ${HZ_HOME}
 
 # Start Hazelcast server
-CMD ["/opt/hazelcast/start-hazelcast.sh", "run"]
+CMD ["/opt/hazelcast/start-hazelcast.sh"]
 
