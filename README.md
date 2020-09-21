@@ -18,8 +18,6 @@ Docker 19.03.12 (This is a workspace's version, other versions might be compatib
 ${pwd}
 |- hazelcast_4.0.1
 |   |- Dockerfile                    # Dockerfile
-|   |- dependency-copy.xml           # Dependency for Hazelcast
-|   |- jmx_agent_config.yaml         # Config of prometheus to monitor metric information
 |   |- logging.properties            # Setting for logging
 |   |- start-hazelcast.sh            # Shell script to run Hazelcast
 -- README.md
