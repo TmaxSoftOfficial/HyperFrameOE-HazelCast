@@ -55,7 +55,7 @@ $ docker run -d JAVA_OPTS="-Dhazelcast.local.publicAddress=<host_ip>:5701" -p 57
 #### 1. Search for the Image.
 - It can be searched from Docker Hub (https://hub.docker.com/repository/docker/tmaxsoftofficial/hyperframeoe-hazelcast) or with the following docker search command.
 ```bash 
-$ docker search hyperframeoe-apache
+$ docker search hyperframeoe-hazelcast
 ```
 
 #### 2. Pull the Image.
