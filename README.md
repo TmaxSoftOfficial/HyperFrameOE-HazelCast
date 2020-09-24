@@ -33,16 +33,14 @@ ${pwd}
 
 #### 2. Download the Dockerfile and binary.
 
-#### 3. To change the configuration, modify files under the conf directory.
+#### 3. Place the Dockerfile and start-hazelcast.sh files in the same path.
 
-#### 4. Place the Dockerfile and start.sh files and the conf, license, and ssl directories in the same path.
-
-#### 5. Build a Docker Image.
+#### 4. Build a Docker Image.
 ```bash
 $ docker build -t <create image_name>:<image_version> .
 ```
 
-#### 6. Generate a Container from the Image.
+#### 5. Generate a Container from the Image.
 ```bash
 $ docker run -d -p 5701:5701 <image_name>:<image_version>
 ```
