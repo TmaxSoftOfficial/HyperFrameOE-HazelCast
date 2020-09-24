@@ -44,7 +44,7 @@ $ docker build -t <create image_name>:<image_version> .
 
 #### 6. Generate a Container from the Image.
 ```bash
-$ docker run -d JAVA_OPTS="-Dhazelcast.local.publicAddress=<host_ip>:5701" -p 5701:5701 <image_name>:<image_version>
+$ docker run -d -p 5701:5701 <image_name>:<image_version>
 ```
 
 
@@ -70,7 +70,7 @@ $ docker build -t tmaxsoftofficial/hyperframeoe-hazelcast:latest .
 
 #### 4. Generate a Container from the Image.
 ```bash
-$ docker run -d -p 5701:5701 <image_name>:<image_version>
+$ docker run -d -p 5701:5701 tmaxsoftofficial/hyperframeoe-hazelcast:latest
 ```
 
 ## License
