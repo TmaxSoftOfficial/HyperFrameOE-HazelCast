@@ -75,7 +75,7 @@ $ docker run -d -p 5701:5701 tmaxsoftofficial/hyperframeoe-hazelcast:latest
 
 ## License
 
-Projects are licensed under the Apache 2.0 license. See the [License](https://github.com/TmaxSoftOfficial/HyperFrameOE-Apache/blob/master/apache_2.4/license/license.dat) file.
+License file hazelcast-community-license.txt file is contained in hazelcast-all-4.0.1.jar
 
 ## Version History
 
