@@ -9,8 +9,8 @@ Docker 19.03.12 (This is a workspace's version, other versions might be compatib
 ## Requirements
 
 #### 1) OS: Debian GNU/Linux 10 (Base OS of openjdk:8 in dockerhub)
-#### 2) JDK : Openjdk 8 (build number 252)
-#### 3) Hazelcast : Hazelcast 4.0.1
+#### 2) JDK: Openjdk 8 (build number 252)
+#### 3) Hazelcast: Hazelcast 4.0.1
 
 ## Directory layout
 
